@@ -13,6 +13,10 @@ import UIKit
  */
 public extension PanModalPresentable where Self: UIViewController {
 
+    var shouldRasterize: Bool {
+        return true
+    }
+    
     var topOffset: CGFloat {
         return topLayoutOffset + 21.0
     }

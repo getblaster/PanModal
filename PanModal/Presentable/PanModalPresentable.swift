@@ -22,6 +22,11 @@ import UIKit
 public protocol PanModalPresentable: AnyObject {
 
     /**
+     Layer rasterizing
+     */
+    var shouldRasterize: Bool {get}
+    
+    /**
      The scroll view embedded in the view controller.
      Setting this value allows for seamless transition scrolling between the embedded scroll view
      and the pan modal container view.

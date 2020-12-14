@@ -859,7 +859,7 @@ private extension PanModalPresentationController {
         view.layer.mask = mask
 
         // Improve performance by rasterizing the layer
-        view.layer.shouldRasterize = true
+        view.layer.shouldRasterize = presentable?.shouldRasterize ?? true
         view.layer.rasterizationScale = UIScreen.main.scale
     }
 
