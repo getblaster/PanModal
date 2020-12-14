@@ -69,7 +69,7 @@ extension PanModalPresentable where Self: UIViewController {
      - Note: We cap this value to the max possible height
      to ensure content is not rendered outside of the view bounds
      */
-    var longFormYPos: CGFloat {
+    public var longFormYPos: CGFloat {
         return max(topMargin(from: longFormHeight), topMargin(from: .maxHeight)) + topOffset
     }
 

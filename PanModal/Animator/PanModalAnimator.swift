@@ -11,7 +11,7 @@ import UIKit
 /**
  Helper animation function to keep animations consistent.
  */
-struct PanModalAnimator {
+public struct PanModalAnimator {
 
     /**
      Constant Animation Properties
@@ -20,7 +20,7 @@ struct PanModalAnimator {
         static let defaultTransitionDuration: TimeInterval = 0.5
     }
 
-    static func animate(_ animations: @escaping PanModalPresentable.AnimationBlockType,
+    public static func animate(_ animations: @escaping PanModalPresentable.AnimationBlockType,
                         config: PanModalPresentable?,
                         _ completion: PanModalPresentable.AnimationCompletionType? = nil) {
 
