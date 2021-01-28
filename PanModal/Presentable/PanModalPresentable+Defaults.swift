@@ -17,6 +17,10 @@ public extension PanModalPresentable where Self: UIViewController {
         return true
     }
     
+    var avoidContentInsetsChanges: Bool {
+        return false
+    }
+    
     var topOffset: CGFloat {
         return topLayoutOffset + 21.0
     }
